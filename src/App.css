@@ -5,6 +5,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   height: 100vh;
 }
@@ -290,6 +294,7 @@ footer p {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .main-div1 {
@@ -339,8 +344,6 @@ p {
   background-color: #1c0047;
   color: white;
   padding: 7vh;
-  border-radius: 20%;
-  margin-bottom: 30vh;
 }
 
 .display1 h3 {
@@ -377,6 +380,7 @@ p {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .main-div2 {
@@ -417,7 +421,6 @@ p {
   background-color: #1c0047;
   color: white;
   padding: 7vh;
-  border-radius: 20%;
   margin-bottom: 30vh;
 }
 
@@ -455,6 +458,7 @@ p {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .main-div3 {
@@ -495,7 +499,6 @@ p {
   background-color: #1c0047;
   color: white;
   padding: 7vh;
-  border-radius: 20%;
   margin-bottom: 30vh;
   max-width: 60%;
   text-align: center;
