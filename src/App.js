@@ -5,6 +5,8 @@ import GetSimilarTracks from './components/GetSimilarTracks';
 import GetTopAlbums from './components/GetTopAlbums';
 import Home from './components/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Autocomplete from '@material-ui/lab/Autocomplete';
+import Auto from './components/Auto';
 
 function App() {
   return (
