@@ -89,7 +89,7 @@ const Home = () => {
             </div>
 
             <footer>
-                <p data-aos="fade-up">Music Recommendation App &copy; by Jelena</p>
+                <p>Music Recommendation App &copy; by Jelena</p>
             </footer>
         </div>
     )

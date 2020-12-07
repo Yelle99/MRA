@@ -284,7 +284,249 @@ footer p {
   font-size: 20px;
 }
 
-.MuiAutocomplete-hasClearIcon {
-  
+
+
+.wrapper1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-div1 {
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20%;
+  color: #1c0047;
+  animation: fade 1s ease;
+}
+
+.ikona1 {
+  font-size: 10rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+.input1 {
+  width: 100%;
+}
+
+.active {
+  display: none;
+}
+
+@keyframes fade {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.display1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  animation: fade 1.5s ease;
+  background-color: #1c0047;
+  color: white;
+  padding: 7vh;
+  border-radius: 20%;
+  margin-bottom: 30vh;
+}
+
+.display1 h3 {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  padding: 15px;
+  font-weight: 500; 
+}
+
+.lista {
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+.gumb1 {
+  border: none;
+  background: white;
+  color: #1c0047;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.gumb1:hover {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+
+.wrapper2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-div2 {
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20%;
+  color: #1c0047;
+  animation: fade 1s ease;
+}
+
+.cd {
+  font-size: 10rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+.input2 {
+  width: 100%;
+}
+
+.active {
+  display: none;
+}
+
+.display2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  animation: fade 1.5s ease;
+  background-color: #1c0047;
+  color: white;
+  padding: 7vh;
+  border-radius: 20%;
+  margin-bottom: 30vh;
+}
+
+.display2 h3 {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  padding: 15px;
+  font-weight: 500; 
+}
+
+.lista {
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+.gumb2 {
+  border: none;
+  background: white;
+  color: #1c0047;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.gumb2:hover {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+
+.wrapper3 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-div3 {
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20%;
+  color: #1c0047;
+  animation: fade 1s ease;
+}
+
+.slusalice {
+  font-size: 10rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+.input3 {
+  width: 100%;
+}
+
+.active {
+  display: none;
+}
+
+.display3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  animation: fade 1.5s ease;
+  background-color: #1c0047;
+  color: white;
+  padding: 7vh;
+  border-radius: 20%;
+  margin-bottom: 30vh;
+  max-width: 60%;
+  text-align: center;
+}
+
+.display3 h3 {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  padding: 15px;
+  font-weight: 500; 
+}
+
+.lista {
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+.gumb3 {
+  border: none;
+  background: white;
+  color: #1c0047;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.gumb3:hover {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
 }
 

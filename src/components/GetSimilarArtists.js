@@ -10,7 +10,7 @@ const GetSimilarArtists = () => {
   const [artists, setArtists] = useState([]);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState("");
-  const [shouldDisplay, setshouldDisplay] = useState(false);
+  const [shouldDisplay, setShouldDisplay] = useState(false);
   const [allArtists, setAllArtists] = useState([]);
   const [query2, setQuery2] = useState("");
 
@@ -59,27 +59,35 @@ const GetSimilarArtists = () => {
   const getSearch = (e) => {
     e.preventDefault();
     setSearch("");
-    setshouldDisplay(true);
   };
 
   const linkStyle = {
-    color: "rgb(198, 129, 219)",
+    color: "#610054",
     textDecoration: "none",
+    padding: '3vh'
   };
 
   const refreshPage = () => {
     window.location.reload(false);
-  }
+  };
+
+  setTimeout(() => {
+    search === "" && query != 0 &&
+      setShouldDisplay(true);
+  }, 400);
 
   return (
     <div className="wrapper1">
       <Link style={linkStyle} to="/">
         &larr; Go Back
       </Link>
-      <div className="main-div1">
+      <div className = {`main-div1 ${shouldDisplay ? "active" : ""}`}>
+        <div className="ikona1">
+          <i class="fas fa-music"></i>
+        </div>
         <h2>Similar Artists</h2>
         <p>Enter artist name:</p>
-        <div style={{ width: 300 }}>
+        <div className="input1">
           <Autocomplete
             id="free-solo-demo"
             onChange={getSearch}
@@ -91,23 +99,22 @@ const GetSimilarArtists = () => {
                 label="Artist Name"
                 margin="normal"
                 variant="outlined"
-                {...console.log(params)}
                 {...setQuery(params.inputProps.value)}
                 onChange={updateSearch}
               />
             )}
           />
-          <button onClick = {refreshPage}>Try Again</button>
         </div>
-        {shouldDisplay && (
-          <div>
-            <h3>SIMILAR TO {query}:</h3>
-            {artists.map((artist) => (
-              <Artists key={artist.mbid} name={artist.name} />
-            ))}
-          </div>
-        )}
       </div>
+      {shouldDisplay && (
+        <div className = "display1">
+          <h3>SIMILAR TO {query}:</h3>
+          {artists.map((artist) => (
+            <Artists key={artist.mbid} name={artist.name} />
+          ))}
+          <button className = "gumb1" onClick={refreshPage}>Try Again</button>
+        </div>
+      )}
     </div>
   );
 };

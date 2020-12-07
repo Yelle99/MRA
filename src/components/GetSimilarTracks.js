@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from "react";
 import Tracks from "./Tracks";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 
@@ -22,7 +22,7 @@ const GetTopAlbums = () => {
 
   useEffect(() => {
     if (isMounted.current && shouldDisplay) {
-      console.log('fetching');
+      console.log("fetching");
       getTracks();
     } else {
       isMounted.current = true;
@@ -74,36 +74,43 @@ const GetTopAlbums = () => {
   const updateSearch = (e) => {
     setSearch(e.target.value);
     setQuery2(search);
-  }
+  };
 
   const updateSearch1 = (e) => {
     setSearch1(e.target.value);
     setQuery3(search1);
-  }
+  };
 
   const getSearch = (e) => {
     e.preventDefault();
-    setSearch('');
-    setSearch1('');
-    setShouldDisplay(true);
-  }
+    setShouldDisplay(true)
+    setSearch("");
+    setSearch1("");
+  };
 
   const linkStyle = {
-    color: '#f6d365',
-    textDecoration: 'none'
-  }
+    color: "#610054",
+    textDecoration: "none",
+    padding: "3vh",
+  };
 
   const refreshPage = () => {
     window.location.reload(false);
-  }
+  };
+
 
   return (
-    <div className = "wrapper3">
-      <Link style = {linkStyle} to = "/">&larr; Go Back</Link>
-      <div className = "main-div3">
+    <div className="wrapper3">
+      <Link style={linkStyle} to="/">
+        &larr; Go Back
+      </Link>
+      <div className={`main-div3 ${shouldDisplay ? "active" : ""}`}>
+        <div className="slusalice">
+          <i class="fas fa-headphones-alt"></i>
+        </div>
         <h2>Similar Songs</h2>
         <p>Enter artist and song name</p>
-        <div style={{ width: 300 }}>
+        <div className = "input3">
           <Autocomplete
             id="free-solo-demo"
             freeSolo
@@ -137,22 +144,25 @@ const GetTopAlbums = () => {
               />
             )}
           />
-          <button onClick = {refreshPage}>Try Again</button>
         </div>
-        {shouldDisplay &&
-          <div><h3>SIMILAR SONGS TO {track} BY {artist}:</h3>
+      </div>
+      {shouldDisplay && (
+        <div className = "display3">
+          <h3>
+            SIMILAR SONGS TO {track} BY {artist}:
+          </h3>
           {tracks.map((track) => (
-            <Tracks 
-              key = {track.mbid}
-              name = {track.name}
-              artist = {track.artist.name}
+            <Tracks
+              key={track.mbid}
+              name={track.name}
+              artist={track.artist.name}
             />
           ))}
+          <button className = "gumb3" onClick={refreshPage}>Try Again</button>
         </div>
-        }
-      </div>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default GetTopAlbums
+export default GetTopAlbums;
