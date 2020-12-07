@@ -86,7 +86,7 @@ const GetSimilarArtists = () => {
           <i class="fas fa-music"></i>
         </div>
         <h2>Similar Artists</h2>
-        <p>Enter artist name:</p>
+        <p>Enter artist name and press Enter</p>
         <div className="input1">
           <Autocomplete
             id="free-solo-demo"

@@ -84,7 +84,7 @@ const GetTopAlbums = () => {
           <i class="fas fa-compact-disc"></i>
         </div>
         <h2>Top Albums</h2>
-        <p>Enter artist name:</p>
+        <p>Enter artist name and press Enter</p>
         <div className = "input2">
           <Autocomplete
             id="free-solo-demo"

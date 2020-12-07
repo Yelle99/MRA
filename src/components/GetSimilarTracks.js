@@ -109,7 +109,7 @@ const GetTopAlbums = () => {
           <i class="fas fa-headphones-alt"></i>
         </div>
         <h2>Similar Songs</h2>
-        <p>Enter artist and song name</p>
+        <p>Enter artist and song name and press Enter</p>
         <div className = "input3">
           <Autocomplete
             id="free-solo-demo"
